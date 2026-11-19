@@ -1,0 +1,12 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "ignorePatterns": [
+    "next-env.d.ts",
+    ".next/**",
+    "mobile/dist/**",
+    "mobile/web-build/**",
+    "public/sw.js",
+    "public/workbox-*.js",
+    "public/fallback-*.js"
+  ]
+}
