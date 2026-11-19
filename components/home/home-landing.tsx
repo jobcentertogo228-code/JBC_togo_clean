@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowDown,
   ArrowRight,
@@ -29,6 +30,7 @@ import {
   Zap,
 } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
+import { JobCenterBrand } from "@/components/brand/job-center-brand";
 
 const stats = [
   { value: "500+", label: "offres d’emploi", icon: BriefcaseBusiness },
@@ -170,18 +172,7 @@ function Reveal({
 }
 
 function Brand({ inverse = false }: { inverse?: boolean }) {
-  return (
-    <Link
-      aria-label="JOB-CENTER, accueil"
-      className={`group inline-flex items-center gap-2.5 font-extrabold tracking-tight ${inverse ? "text-white" : "text-slate-950 dark:text-white"}`}
-      href="/"
-    >
-      <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-blue-600 text-lg text-white shadow-lg shadow-blue-600/25">
-        J<span className="absolute bottom-1.5 right-1.5 h-1.5 w-1.5 rounded-full bg-[#D4AF37]" />
-      </span>
-      <span className="text-[1.05rem]">JOB-CENTER</span>
-    </Link>
-  );
+  return <JobCenterBrand inverse={inverse} />;
 }
 
 function SectionHeading({
@@ -340,7 +331,7 @@ function AppMockup() {
             <div className="absolute left-1/2 top-2 h-4 w-20 -translate-x-1/2 rounded-full bg-slate-900" />
             <div className="flex items-center justify-between pt-2">
               <span className="inline-flex items-center gap-2 text-[10px] font-extrabold tracking-tight text-slate-950">
-                <span className="relative flex h-7 w-7 items-center justify-center rounded-lg bg-blue-600 text-xs text-white">J<span className="absolute bottom-1 right-1 h-1 w-1 rounded-full bg-[#D4AF37]" /></span>
+                <Image alt="JOB CENTER Logo" className="h-7 w-7 object-contain" height={28} src="/brand/job-center-mark.svg" width={28} />
                 JOB-CENTER
               </span>
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-700"><BellRing className="h-4 w-4" /></span>

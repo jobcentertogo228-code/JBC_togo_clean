@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+  <g transform="translate(24 24)">
+    <rect width="452" height="452" rx="96" fill="#17366F"/>
+    <circle cx="226" cy="226" r="155" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-dasharray="822 153" transform="rotate(-38 226 226)"/>
+    <path d="M155 136v121c0 58 40 98 96 98 59 0 99-40 99-99v-62" fill="none" stroke="#FFFFFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M246 282l73-73M319 209v51M319 209h-51" fill="none" stroke="#D4A017" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(560 152)">
+    <text x="0" y="92" fill="#17366F" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="116" font-weight="800" letter-spacing="-3">JOB</text>
+    <text x="0" y="194" fill="#17366F" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="116" font-weight="400" letter-spacing="12">CENTER</text>
+    <rect x="3" y="232" width="78" height="10" rx="5" fill="#D4A017"/>
+    <text x="104" y="245" fill="#17366F" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="1">Vos talents, vos opportunités.</text>
+  </g>
+</svg>

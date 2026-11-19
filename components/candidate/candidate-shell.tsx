@@ -5,6 +5,7 @@ import { CandidateNavigation } from "@/components/candidate/candidate-navigation
 import { NotificationBell } from "@/components/notifications/notification-bell";
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { JobCenterBrand } from "@/components/brand/job-center-brand";
 
 export function CandidateShell({
   children,
@@ -21,10 +22,7 @@ export function CandidateShell({
     <div className="candidate-theme min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-30 border-b border-border bg-card/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link className="flex items-center gap-2 font-bold tracking-tight text-foreground" href="/candidate">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-sm text-primary-foreground">J</span>
-            <span>JOB-CENTER</span>
-          </Link>
+          <JobCenterBrand href="/candidate" />
           <div className="flex items-center gap-3">
             <Button asChild className="hidden sm:inline-flex" size="sm" variant="outline">
               <Link href="/candidate/offres">

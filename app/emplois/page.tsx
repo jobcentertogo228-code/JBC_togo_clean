@@ -10,6 +10,7 @@ import { getProfileForUser, roleHome } from "@/lib/auth/roles";
 import { isAuthSessionMissingError } from "@/lib/auth/session";
 import { getJobFilterOptions, getSavedJobIds, parseJobSearchFilters, searchPublishedJobs } from "@/lib/jobs/queries";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { JobCenterBrand } from "@/components/brand/job-center-brand";
 
 export const metadata: Metadata = {
   title: "Offres d’emploi",
@@ -58,10 +59,7 @@ export default async function JobsPage({ searchParams }: { searchParams: Promise
     <main className="min-h-screen bg-background">
       <header className="border-b border-border bg-card">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link className="flex items-center gap-2 font-bold tracking-tight text-slate-950" href="/">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-sm text-primary-foreground">J</span>
-            JOB-CENTER
-          </Link>
+          <JobCenterBrand />
           <nav aria-label="Navigation principale" className="flex items-center gap-4 text-sm">
             <Link className="font-semibold text-primary" href="/emplois">Offres d’emploi</Link>
             {accountHref ? (

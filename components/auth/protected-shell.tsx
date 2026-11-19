@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { signOutAction } from "@/app/actions/auth";
 import { NotificationBell } from "@/components/notifications/notification-bell";
+import { JobCenterBrand } from "@/components/brand/job-center-brand";
 
 export function ProtectedShell({
   children,
@@ -18,7 +19,7 @@ export function ProtectedShell({
   return (
     <div className="page-shell">
       <header className="site-header">
-        <Link className="brand" href={home}>JOB-CENTER</Link>
+        <JobCenterBrand href={home} />
         <nav className="site-nav" aria-label="Navigation de l’espace">
           <span className="muted">{title}</span>
           {navigationLinks.map((item) => (
