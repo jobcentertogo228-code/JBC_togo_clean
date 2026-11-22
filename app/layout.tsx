@@ -47,11 +47,20 @@ export const metadata: Metadata = {
     siteName: "Job Center",
     title: "Job Center | Recrutement au Togo",
     description: "Plateforme intelligente de recrutement reliant candidats et entreprises.",
+    images: [
+      {
+        url: "/brand/jobcenter-new-logo.png.png",
+        width: 512,
+        height: 512,
+        alt: "Logo Job Center",
+      },
+    ],
   },
   twitter: {
     card: "summary",
     title: "Job Center | Recrutement au Togo",
     description: "Plateforme intelligente de recrutement reliant candidats et entreprises.",
+    images: ["/brand/jobcenter-new-logo.png.png"],
   },
 };
 
